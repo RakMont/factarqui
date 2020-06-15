@@ -1,0 +1,10 @@
+#client-title {
+    position: relative;
+    margin-bottom: 50px;
+}
+button {
+    margin: 1px;
+}
+textarea {
+    height: 35px;
+}
