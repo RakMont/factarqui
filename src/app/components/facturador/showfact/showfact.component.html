@@ -1,1 +1,14 @@
-<p>showfact works!</p>
+<h1>FACTURA</h1>
+<div *ngFor="let fa of factura">
+    <p>Llamado: </p>
+    <P>{{fa.endPointPhoneNumber}}</P>
+    <p>Empiezo de llamada(24h): </p>
+    <P>{{fa.startingCallTime}}</P>
+    <p>Fecha: </p>
+    <P>{{fa.date}}</P>
+    <p>Duracion(m): </p>
+    <P>{{fa.callDuration}}</P>
+    <p>Costo llamada: </p>
+    <P>{{fa.callCost}}</P>
+</div>
+<h1>Costo Total = {{costoTotal}}</h1>

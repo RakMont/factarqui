@@ -14,10 +14,10 @@ export class ApiService {
 
 
 
-  public retrieveCallRecords(path:string, body:any) {
+  public retrieveCallRecords(path:string) {
 
     var endpoint = this.API_URL + path;
-    return this.http.get(endpoint, body);
+    return this.http.get(endpoint);
 
   }
 
