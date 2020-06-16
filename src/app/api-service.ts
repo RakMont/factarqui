@@ -9,8 +9,8 @@ export class ApiService {
 
   constructor(public http: HttpClient) { }
 
-  API_URL : string = "https://localhost/4567/";
-
+ // API_URL : string = "https://localhost/4567/";
+ API_URL = 'http://localhost:4567/';
 
 
 
@@ -21,5 +21,5 @@ export class ApiService {
 
   }
 
-  
+
 }
