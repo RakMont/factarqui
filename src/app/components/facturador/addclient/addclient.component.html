@@ -7,34 +7,15 @@
         </h3>
         <hr>
     </div>
-
+<form (ngSubmit)="onSubmit()">
     <div class="col-md-6 col-lg-8">
         <h5>Número de celular:</h5>
-        <textarea type="text" placeholder="Escriba aquí" height="20px" ></textarea>
+        <input type="text" placeholder="Escriba aquí"  name="phoneNumber" id="phoneNumber" [(ngModel)]="phoneNumber"/>
     </div>
-
-    <div class="col-md-6 col-lg-8">
-            <h5>Seleccione el mes:</h5>
-            <!-- <button type="button" class="btn btn-warning" value="Confirmar" routerLink="/crearEvento/">Registrar</button> -->
-            <select>
-            <!-- <option selected> -------------Seleccione el mes------------- </option> -->
-            <option [value]="0">Enero</option>
-            <option [value]="1">Febrero</option>
-            <option [value]="2">Marzo</option>
-            <option [value]="3">Abril</option>
-            <option [value]="4">Mayo</option>
-            <option [value]="5">Junio</option>
-            <option [value]="6">Julio</option>
-            <option [value]="7">Agosto</option>
-            <option [value]="8">Septiembre</option>
-            <option [value]="9">Octubre</option>
-            <option [value]="10">Noviembre</option>
-            <option [value]="11">Diciembre</option>
-        </select>
-    </div> 
-
     <div style="text-align: right;width:220px">
         <button type="submit" class="btn btn-warning" value="Confirmar">Facturar</button>        
     </div>
+</form>
+
    
 </div>

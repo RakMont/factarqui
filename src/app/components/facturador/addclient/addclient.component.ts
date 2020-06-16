@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiService } from 'src/app/api-service';
 
 @Component({
   selector: 'app-addclient',
@@ -7,9 +8,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddclientComponent implements OnInit {
 
-  constructor() { }
+  phoneNumber=""
+  constructor(public apiService: ApiService) { }
 
   ngOnInit(): void {
   }
 
+  public onSubmit(){
+    console.log(this.phoneNumber);
+    this.apiService.retrieveCallRecords("retrieve/", this.phoneNumber).subscribe(
+      (r) => {
+        console.log(r);
+      },
+      (e) => {
+        console.log(e);
+      }
+
+    );
+  }
 }
